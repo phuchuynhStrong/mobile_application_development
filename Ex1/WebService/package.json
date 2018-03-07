@@ -1,0 +1,21 @@
+{
+  "name": "webservice",
+  "version": "1.0.0",
+  "description": "GoogleMap features RESTful",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "keywords": [
+    "RESTful"
+  ],
+  "author": "PhucHuynh",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
