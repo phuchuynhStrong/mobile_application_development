@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="phucht.com.currencytrans.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:elevation="4dp"
+        android:background="#64abab"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="CURRENTCY TRANS"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:background="@android:color/white"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:paddingLeft="@dimen/main_page_padding_left"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:text="@string/currency_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:layout_marginLeft="@dimen/main_page_padding_left"
+                android:layout_marginTop="20dp"
+                android:id="@+id/currency_start_spinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:paddingLeft="@dimen/main_page_padding_left"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:text="@string/currency_end"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:layout_marginLeft="@dimen/main_page_padding_left"
+                android:layout_marginTop="20dp"
+                android:id="@+id/currency_end_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="@dimen/main_page_padding_left"
+                android:hint="@string/amount_of_money"
+                android:id="@+id/start_curr_text_input_layout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/start_curr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:text="Result here"
+                android:layout_marginTop="50dp"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:id="@+id/result_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

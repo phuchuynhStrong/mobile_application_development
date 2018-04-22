@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CurrencyTrans</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="amount_of_money">Amount of money</string>
+    <string name="currency_start">Currency start</string>
+    <string name="currency_end">Currency end</string>
+</resources>
